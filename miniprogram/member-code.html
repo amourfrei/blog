@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bruno•Chen | 京东会员码小程序插件</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/blog/assets/css/10.styles.3d53b23d.css" as="style"><link rel="preload" href="/blog/assets/js/app.cd4213f7.js" as="script"><link rel="preload" href="/blog/assets/js/7.790f4324.js" as="script"><link rel="prefetch" href="/blog/assets/js/6.31af1396.js"><link rel="prefetch" href="/blog/assets/js/1.cb1b1261.js"><link rel="prefetch" href="/blog/assets/js/2.5e4de388.js"><link rel="prefetch" href="/blog/assets/js/3.4bff3075.js"><link rel="prefetch" href="/blog/assets/js/4.66dc4f8b.js"><link rel="prefetch" href="/blog/assets/js/5.0e8881dd.js"><link rel="prefetch" href="/blog/assets/js/0.e54be247.js"><link rel="prefetch" href="/blog/assets/js/8.0b50bbc7.js"><link rel="prefetch" href="/blog/assets/js/9.4a6d7e27.js">
+    <link rel="stylesheet" href="/blog/assets/css/10.styles.3d53b23d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/blog/" class="home-link router-link-active"><!----><span class="site-name">
+      Bruno•Chen
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">HOME</a></div><div class="nav-item"><a href="https://github.com/amourfrei" target="_blank" rel="noopener noreferrer" class="nav-link">GITHUB</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">HOME</a></div><div class="nav-item"><a href="https://github.com/amourfrei" target="_blank" rel="noopener noreferrer" class="nav-link">GITHUB</a></div><!----></nav><ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>web</span><span class="arrow right"></span></p><!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>miniprogram</span><span class="arrow down"></span></p><ul class="sidebar-group-items"><li><a href="/blog/miniprogram/member-code.html" class="active sidebar-link">京东会员码小程序插件</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>mix</span><span class="arrow right"></span></p><!----></div></li></ul></div><div class="page"><div class="content"><h1 id="京东会员码小程序插件"><a href="#京东会员码小程序插件" aria-hidden="true" class="header-anchor">#</a> 京东会员码小程序插件</h1><h3 id="描述"><a href="#描述" aria-hidden="true" class="header-anchor">#</a> 描述</h3><ul><li>小程序会员码插件是将CRM带有会员身份的二维码、条形码赋能到合作伙伴的小程序中，方便合作伙伴小程序端快速接入。</li><li>帮助合作伙伴生成并显示安全的会员码（ 二维码和条形码 ）。</li></ul><h3 id="功能"><a href="#功能" aria-hidden="true" class="header-anchor">#</a> 功能</h3><ol><li>会员码展示
+<ul><li>定时刷新</li><li>二维码放大</li><li>防截屏</li><li>风控保障</li><li>验证安全保障</li></ul></li><li>京东、微信免密支付展示</li><li>微信免密支付开通</li><li>支付设置</li><li>会员码刷新</li></ol><h3 id="项目结构"><a href="#项目结构" aria-hidden="true" class="header-anchor">#</a> 项目结构</h3><pre class="language-text"><code>jddjMemberCode
+├─┬ miniprogram //小程序目录，用于展示插件
+│ ├── app.js
+│ ├── app.json
+│ └─┬ pages
+│   ├─┬ index
+│   │ ├── index.js
+│   │ ├── index.json
+│   │ ├── index.wxml
+│   │ └── index.wxss
+├─┬ plugin //插件目录，包含插件的apis和插件的Components
+│ ├─┬ api
+│ │ └── data.js
+│ ├─┬ components
+│ │ └─┬ member
+│ │   ├── member.js
+│ │   ├── member.json
+│ │   ├── member.wxml
+│ │   └── member.wxss
+│ ├── index.js
+│ ├── plugin.json
+│ ├─┬ static
+│ │ └── jdpay-logo.png
+│ └─┬ utils //工具函数
+│   ├── barcode.js
+│   ├── qrcode.js
+│   └── utils.js
+└── project.config.json
+</code></pre><h3 id="接入"><a href="#接入" aria-hidden="true" class="header-anchor">#</a> 接入</h3><ol><li>在小程序后台搜索「京东支付会员码」并申请使用，通过后即可使用</li></ol><h3 id="使用方法"><a href="#使用方法" aria-hidden="true" class="header-anchor">#</a> 使用方法</h3><h4 id="引入插件"><a href="#引入插件" aria-hidden="true" class="header-anchor">#</a> 引入插件</h4><pre class="language-json"><code>//@version 根据要接入的版本填写
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;memberCode&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;provider&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wxb************&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>使用自定义组件：</p><pre class="language-html"><code>//使用wx:if控制离开组件时销毁
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>memberCode</span> <span class="token attr-name"><span class="token namespace">wx:</span>if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{{ pluginStatus }}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>memberCode</span><span class="token punctuation">&gt;</span></span>
+</code></pre><p>使用小程序插件内api：</p><ul><li>定义回调函数</li></ul><pre class="language-javascript"><code><span class="token comment">/**
+**@params:
+**@name: options 
+**@type: Object
+**/</span>
+<span class="token keyword">function</span> <span class="token function">jdpayPluginCallback</span> <span class="token punctuation">(</span> options <span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//your code</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//options格式：</span>
+<span class="token punctuation">{</span>
+    code<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//0：使用webview打开指定链接 1：开通微信免密 2：用户未登录 3：返回上一页</span>
+    type<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//0： 开通京东免密 2：支付设置 3：支付成功，仅当code为0 时使用</span>
+    url<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">//要打开的页面url</span>
+    miniPayParam<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//开通微信免密所需数据</span>
+<span class="token punctuation">}</span>
+</code></pre><p>初始化插件api:</p><pre class="language-javascript"><code><span class="token comment">// pt_key和sid为业务登录标识，根据自己业务选择使用，有且仅有一个</span>
+<span class="token comment">// deviceId为设备号，必传</span>
+<span class="token comment">// openid为小程序内风控所需字段，必传</span>
+<span class="token keyword">var</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+    sid<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    deviceId<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    openId<span class="token punctuation">:</span> <span class="token string">''</span>
+<span class="token punctuation">}</span>
+plugin<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span> param<span class="token punctuation">,</span> jdpayPluginCallback <span class="token punctuation">)</span>
+</code></pre><div class="warning custom-block"><p class="custom-block-title">小程序后台配置request合法域名</p><ol><li>开通京东免密支付的域名： https://mapi.jdpay.com/</li><li>支付设置的域名： https://payxsign.jd.com/</li></ol></div></div><!----><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/blog/web/node-https-dev-server.html" class="prev">
+          nodejs dev server support https.
+        </a></span><span class="next"><a href="/blog/mix/marvel.html">
+          Marvel Hero
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/blog/assets/js/7.790f4324.js" defer></script><script src="/blog/assets/js/app.cd4213f7.js" defer></script>
+  </body>
+</html>
